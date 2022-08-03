@@ -1,0 +1,97 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+
+.flex {display: flex}
+.grid {display: grid}
+
+.socialSignUp-container, .normalSignUp-container {
+	width: 50vw;
+	height: 100vh;
+}
+.socialSignUp-container {
+	background-image: url('@/assets/img/bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+}
+
+.button {
+	border: none; outline: none;
+	border-radius: 15px;
+	height: 2.2rem;	
+	cursor: pointer;
+}
+
+.socialSignUp-buttons-wrapper {
+	align-content: center;
+	grid-gap: 2.5rem;
+}
+
+.social-button {
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 25rem;
+	background-color: #ffffff;
+}
+.social-button:hover {background-color: #fafafa}
+.social-button:active {background-color: #f1f1f1}
+
+.social-logo {width: 1.5rem;}
+.social-button:last-child {gap: .2rem}
+.social-button:last-child .social-logo {width: 2rem; padding-right: .8rem;}
+
+.normalSignUp-container {
+	background-color: white;
+	justify-content: center;
+}
+
+.normalSignUp-wrapper {
+	align-items: center;
+	align-content: center;
+	max-width: 25rem;
+	height: 100%;
+}
+
+.normalSignUp-container h1 {text-align: center; color: #555; letter-spacing: .2rem;}
+.normalSignUp-container h2 {text-align: center; color: #555; font-weight: 300;}
+
+.text-label {margin-top: 1.5rem; color: #555;}
+.text-input {
+	margin-top: .1rem;
+	border: none;
+	outline: none;
+	box-shadow: 1px 1px 2px 1px #d8d8d8;
+	height: 1.5rem;
+}
+
+.checkbox-container {
+	margin-top: 1.5rem;
+	gap: 1rem;
+}
+
+.checkbox-container label {font-size: .8rem;}
+
+.sign-up-button {
+	margin-top: 1.8rem;
+	background-color: #03a9f4;
+	color: white;
+	font-size: 1.1rem;
+	box-shadow: 2px 2px 2px 1px #d8d8d8;	
+}
+.sign-up-button:hover {background-color: #04a1ea;}
+.sign-up-button:active {
+	box-shadow: 1px 1px 2px 1px #d8d8d8;	
+}
+
+@media screen and (max-width: 1000px) {
+	.socialSignUp-container, .normalSignUp-container {width: 100vw;	}
+	.app-container {display: grid;}
+	.socialSignUp-container {grid-row: 2;}
+}
